@@ -18,24 +18,38 @@
 
 ---
 
-## 📖 About
+## About
 
 Next.js 14 (App Router) port of the single-file STACK'D burger restaurant site, with the app code split by functionality. This project demonstrates a progressive migration from a legacy single-file application to a modern React framework while maintaining full functionality.
 
-## ✨ Features
+## Screenshots
 
-- 🍔 **Full Restaurant Experience** - Menu browsing, cart management, checkout, and order tracking
-- 🎨 **Dark/Light Theme Toggle** - Persistent theme switching with localStorage
-- 📱 **Responsive Design** - Mobile-first approach with fluid layouts
-- 🔐 **Demo Authentication** - Client-side auth with role-based access control (RBAC)
-- 🛠️ **Admin Dashboard** - Complete management interface with 11 admin tabs
-- 🎬 **Video Hero Section** - Eye-catching hero video on the homepage
-- 🏪 **Branch Locator** - Multiple restaurant locations showcase
-- 🎁 **Promotions System** - Dynamic promotional offers management
-- 📊 **Analytics Dashboard** - Order tracking and business insights
-- 💾 **LocalStorage State** - Client-side state persistence
+### Landing Page
+![Landing Page](docs/landing.png)
 
-## 🚀 Quick Start
+### Menu Catalog
+![Menu Page](docs/menu.png)
+
+### Sign In
+![Sign In Page](docs/signin.png)
+
+### Admin Dashboard
+![Admin Dashboard](docs/dashboard.png)
+
+## Features
+
+- **Full Restaurant Experience** - Menu browsing, cart management, checkout, and order tracking
+- **Dark/Light Theme Toggle** - Persistent theme switching with localStorage
+- **Responsive Design** - Mobile-first approach with fluid layouts
+- **Demo Authentication** - Client-side auth with role-based access control (RBAC)
+- **Admin Dashboard** - Complete management interface with 11 admin tabs
+- **Video Hero Section** - Eye-catching hero video on the homepage
+- **Branch Locator** - Multiple restaurant locations showcase
+- **Promotions System** - Dynamic promotional offers management
+- **Analytics Dashboard** - Order tracking and business insights
+- **LocalStorage State** - Client-side state persistence
+
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -50,7 +64,7 @@ npm run build && npm start
 
 Visit [http://localhost:3000](http://localhost:3000) to see the app in action.
 
-## 📁 Project Structure
+## Project Structure
 
 ### Next.js Components
 
@@ -85,7 +99,7 @@ boot.js     seed demo data/users, first render, splash
 
 Each `pages/*.js` file registers its pages with `Object.assign(R, { … })`.
 
-## 🎯 Routes
+## Routes
 
 The application uses hash-based routing for client-side navigation:
 
@@ -99,7 +113,7 @@ The application uses hash-based routing for client-side navigation:
 - `#account` - User authentication and profile
 - `#admin` - Admin dashboard (requires authentication)
 
-## 🔧 Development
+## Development
 
 ### Scripts
 
@@ -118,21 +132,21 @@ npm run lint     # Run ESLint checks
 - **State Management:** localStorage (legacy)
 - **Routing:** Hash-based client-side routing
 
-## 📝 Notes
+## Notes
 
-- ✅ **Verified in headless Chromium** against the original single file: identical rendered HTML across all public pages, cart → checkout → order, demo-account login, all 11 admin tabs and the theme toggle.
-- 🔄 **State is still `localStorage`** - Auth/RBAC is a client-side demo
-- 📹 **Hero video** now loads from `/hero.mp4` (previously inline)
-- 🎯 **Next step toward idiomatic React:** Convert one page at a time into `app/<route>/page.js` components and replace the global state with a store (Redux, Zustand, or Context API)
+- Verified in headless Chromium against the original single file: identical rendered HTML across all public pages, cart → checkout → order, demo-account login, all 11 admin tabs and the theme toggle.
+- State is still `localStorage` - Auth/RBAC is a client-side demo
+- Hero video now loads from `/hero.mp4` (previously inline)
+- Next step toward idiomatic React: Convert one page at a time into `app/<route>/page.js` components and replace the global state with a store (Redux, Zustand, or Context API)
 
-## 🛣️ Migration Path
+## Migration Path
 
 This project represents a transitional architecture between a legacy single-file app and a modern React application:
 
 **Current State:**
-- ✅ Next.js 14 App Router structure
-- ✅ Component organization
-- ✅ Asset optimization
+- Next.js 14 App Router structure
+- Component organization
+- Asset optimization
 
 **Recommended Next Steps:**
 1. Convert hash routes to Next.js file-based routing
@@ -143,17 +157,17 @@ This project represents a transitional architecture between a legacy single-file
 6. Convert inline event handlers to React event handlers
 7. Split monolithic CSS into component-scoped styles
 
-## 📄 License
+## License
 
 This project is private and not licensed for public use.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ using Next.js</p>
+  <p>Built with Next.js</p>
   <img src="assets/images/icon.svg" alt="STACK'D Logo" width="60" height="60">
 </div>
